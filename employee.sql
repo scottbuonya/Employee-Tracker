@@ -26,4 +26,11 @@ role_id INT,
 manager_id INT
 );
 
-INSERT INTO department (id, name)
+INSERT INTO department (name)
+VALUES ("Honey Buns Cafe");
+
+INSERT INTO position (title, salary)
+VALUES ("Assistant Manager", 25000);
+
+INSERT INTO employee (first_name, last_name)
+VALUES ("Scott", "Buonya")

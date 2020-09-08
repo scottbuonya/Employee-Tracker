@@ -7,3 +7,15 @@ var connection = mysql.createConnection({
     password: "sc0ttb961203",
     database: "employeeDB"
 });
+
+connection.connect(function(err){
+    if (err) throw err;
+    console.log("connected as id" + connection.threadId);
+    afterConnection();
+});
+
+connection.connect(function(err){
+    if (err) throw err;
+    console.table(res);
+    connection.end();
+});
